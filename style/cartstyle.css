@@ -1,0 +1,426 @@
+/*---------------------------------------------------cart--------*/
+.cart {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.cart-content {
+    display: flex;
+    gap: 20px;
+}
+
+.cart-top-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.cart-top {
+    height: 2px;
+    width: 70%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 100px;
+    position: relative;
+}
+
+.cart-top-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.cart-top-item:hover {
+    border-color: #a33757;
+    cursor: pointer;
+}
+
+.cart-top-item i {
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.cart-top-cart {
+    border: 2px solid #a33757;
+}
+
+.cart-top-cart i {
+    color: #a33757;
+}
+
+.cart-content-left {
+    flex: 2;
+    padding-right: 12px;
+}
+
+.cart-content-left table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cart-content-left table th {
+    padding: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #010101;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #ddd;
+}
+
+.cart-content-left table td {
+    padding: 20px 0;
+    border-bottom: 2px solid #d2d1d1;
+}
+
+.cart-content-left table td img {
+    width: 130px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-content-left table p {
+    font-size: 12px;
+    color: #484848;
+}
+
+.cart-content-left table input {
+    width: 40px;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.cart-content-left table span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cart-content-left table span:hover {
+    background-color: #f1f1f1;
+}
+
+.cart-content-right {
+    flex: 1;
+    padding-left: 12px;
+    border-left: 2px solid #f1f1f1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-content-right table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cart-content-right table th {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ddd;
+}
+
+.cart-content-right table td {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+.cart-content-right table tr:nth-child(4) td {
+    border-bottom: 2px solid #ddd;
+}
+
+.cart-content-right-text {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.cart-content-right-text p {
+    font-size: 14px;
+    color: #333;
+}
+
+.cart-content-right-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-content-right-button button:first-child {
+    background-color: #fff;
+    border: 1px solid #333;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cart-content-right-button button:first-child:hover {
+    background-color: #f1f1f1;
+}
+
+.cart-content-right-button button:last-child {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cart-content-right-button button:last-child:hover {
+    background-color: #555;
+}
+
+.cart-content-right-singin {
+    margin-top: 20px;
+}
+
+.cart-content-right-singin p {
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+}
+.cart-content-right-singin p a {
+    color: #000000;
+    font-weight: bold;
+}
+/*------------------------------------Responsive------------------------------------*/
+
+/* Tablet (768px <= width <= 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 48em) {
+    .cart-content {
+        flex-direction: column;
+    }
+
+    .cart-content-left, .cart-content-right {
+        flex: 1 1 100%;
+    }
+
+    .cart-content-left table td img {
+        width: 8em; /* Thu nhỏ ảnh sản phẩm */
+    }
+
+    .cart-top-item {
+        width: 3.2em;
+        height: 3.2em;
+    }
+
+    .cart-top-item i {
+        font-size: 1.1em; /* Giảm kích thước icon */
+    }
+
+    .cart-top-wrap {
+        padding: 1.1em 0;
+    }
+
+    .cart-content-left table td {
+        padding: 1.5em 0; /* Giảm padding trong bảng */
+    }
+
+    .cart-content-right table td {
+        font-size: 0.8em; /* Giảm font size cho thông tin bảng bên phải */
+    }
+
+    .cart-content-right-singin p {
+        font-size: 0.8em; /* Giảm kích thước font cho thông báo đăng ký */
+    }
+
+    .cart-content-right-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-content-right-button button {
+        margin: 1em 0; /* Tạo khoảng cách giữa các nút */
+        width: 100%; /* Nút giỏ hàng và đặt hàng chiếm toàn bộ chiều rộng */
+    }
+}
+
+/* Mobile (width <= 767px) */
+@media screen and (max-width: 48em) {
+    .cart-content {
+        flex-direction: column; /* Chuyển thành hàng dọc trên mobile */
+        gap: 0.6em; /* Giảm khoảng cách giữa các phần */
+    }
+
+    .cart-content-left, .cart-content-right {
+        flex: 1 1 100%;
+    }
+
+    .cart-top-wrap {
+        padding: 1em 0;
+    }
+
+    .cart-top {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .cart-top-item {
+        width: 3em;
+        height: 3em;
+    }
+
+    .cart-top-item i {
+        font-size: 1em;
+    }
+
+    .cart-content-left table td img {
+        width: 5.6em; /* Thu nhỏ ảnh sản phẩm trên mobile */
+    }
+
+    .cart-content-left table td {
+        padding: 0.6em 0;
+    }
+
+    .cart-content-right table td {
+        font-size: 0.875em; /* Giảm font size cho bảng bên phải */
+    }
+
+    .cart-content-right-singin p {
+        font-size: 0.75em; /* Giảm kích thước font cho thông báo đăng ký */
+    }
+
+    .cart-content-right-button button {
+        width: 100%;
+        margin: 1em 0; /* Tạo khoảng cách giữa các nút */
+    }
+
+    .cart-content-left table th, .cart-content-right table th {
+        padding: 0.75em;
+    }
+
+    .cart-content-left table td {
+        font-size: 0.75em; /* Giảm font-size cho bảng chi tiết giỏ hàng */
+    }
+
+    .cart-content-left table td img {
+        width: 5.6em; /* Thu nhỏ ảnh sản phẩm trên mobile */
+    }
+}
+/* Mobile (width <= 767px) */
+@media screen and (max-width: 48em) {
+    .cart-content {
+        flex-direction: column; /* Chuyển thành hàng dọc trên mobile */
+        gap: 0.6em; /* Giảm khoảng cách giữa các phần */
+    }
+
+    .cart-content-left, .cart-content-right {
+        flex: 1 1 100%;
+    }
+
+    .cart-top-wrap {
+        padding: 1em 0;
+    }
+
+    .cart-top {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .cart-top-item {
+        width: 3em;
+        height: 3em;
+    }
+
+    .cart-top-item i {
+        font-size: 1em;
+    }
+
+    .cart-content-left table td img {
+        width: 5.6em; /* Thu nhỏ ảnh sản phẩm trên mobile */
+    }
+
+    .cart-content-left table td {
+        padding: 0.6em 0;
+    }
+
+    .cart-content-right table td {
+        font-size: 0.875em; /* Giảm font size cho bảng bên phải */
+    }
+
+    .cart-content-right-singin p {
+        font-size: 0.75em; /* Giảm kích thước font cho thông báo đăng ký */
+    }
+
+    .cart-content-right-button button {
+        width: 100%;
+        margin: 1em 0; /* Tạo khoảng cách giữa các nút */
+    }
+
+    .cart-content-left table th, .cart-content-right table th {
+        padding: 0.75em;
+    }
+
+    .cart-content-left table td {
+        font-size: 0.75em; /* Giảm font-size cho bảng chi tiết giỏ hàng */
+    }
+
+    .cart-content-left table td img {
+        width: 5.6em; /* Thu nhỏ ảnh sản phẩm trên mobile */
+    }
+}
+/* Mobile (width <= 767px) */
+/* Mobile (width <= 767px) */
+@media screen and (max-width: 48em) {
+    .cart-content-left table {
+        font-size: 0.75em; /* Giảm kích thước font cho bảng trên mobile */
+        width: 100%;
+    }
+
+    .cart-content-left table th, .cart-content-left table td {
+        padding: 0.75em 1em; /* Giảm padding trong các ô để tiết kiệm không gian */
+    }
+
+    .cart-content-left table th {
+        font-size: 0.9em; /* Giảm kích thước font cho tiêu đề trên mobile */
+    }
+
+    .cart-content-left table td {
+        font-size: 0.75em; /* Giảm kích thước font cho các dữ liệu trong bảng */
+    }
+
+    .cart-content-left table td img {
+        width: 5.6em; /* Thu nhỏ ảnh sản phẩm trên mobile */
+        max-width: 100%;
+        height: auto;
+    }
+
+    .cart-content-left table span {
+        font-size: 0.875em; /* Thu nhỏ icon cộng/trừ trên mobile */
+        padding: 0.5em;
+    }
+
+    .cart-content-left table td a {
+        font-size: 0.75em; /* Giảm kích thước font chữ cho liên kết xóa */
+    }
+}
+
+
+
+

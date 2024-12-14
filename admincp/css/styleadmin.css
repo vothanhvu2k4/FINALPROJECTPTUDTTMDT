@@ -1,0 +1,201 @@
+
+ul.admincp_list { 
+    padding: 0; 
+    margin: 0;
+    list-style: none;
+}
+ul.admincp_list li {
+float: left;
+margin: 5px;
+}
+.clear{
+clear: both;
+}
+h3.title_admin {
+text-align: center;
+font-size: 40px; color: blue;
+}
+.wrapper{
+border:1px solid #000;
+height: auto;
+width: 90%;
+margin:0 auto;
+}
+
+
+/* Reset lại một số thuộc tính để tránh lỗi hiển thị giữa các trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cấu trúc chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Các tiêu đề chính */
+h1, p, h3 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Bảng danh sách bài viết */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #108AB1;
+    color: white;
+    font-weight: bold;
+}
+
+/* Các ô trong bảng */
+td {
+    background-color: #f9f9f9;
+}
+
+/* Chỉnh sửa các liên kết */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form nhập liệu */
+form {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="file"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #DC586D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #051895;
+}
+
+/* Chỉnh sửa bảng danh mục bài viết */
+select {
+    background-color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Style cho alert thông báo */
+.alert {
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.alert.success {
+    background-color: #28a745;
+}
+
+.alert.error {
+    background-color: #dc3545;
+}
+
+/* Các phần tử dành cho phần quản lý */
+ul.admincp_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+ul.admincp_list li {
+    margin: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Các phần tử khác */
+.wrapper {
+    border: 1px solid #000;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Các tiêu đề quản lý */
+h3.title_admin {
+    text-align: center;
+    font-size: 40px;
+    color: #FF6600;
+    margin-bottom: 40px;
+}
+.titleadmin{
+    color: #03A62C;
+    font-weight: bold;
+}

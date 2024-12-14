@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 10px;
+    color: rgb(137, 182, 248);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.logo img {
+    width: 150%;
+    max-width: 200px; /* Giới hạn kích thước tối đa của logo */
+}
+
+.navigation {
+    flex-grow: 1;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 5px;
+}
+
+.menu a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    padding: 10px 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    color: #852E4E;
+    border-radius: 10px;
+}
+
+.header-extras {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    position: relative;
+    margin-right: 20px;
+}
+
+.search-bar input {
+    padding: 5px 30px 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.user-icons a {
+    color: rgb(1, 1, 1);
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: rgb(239, 66, 66);
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+.navigation .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Đảm bảo menu chính hiển thị ngang */
+}
+
+
+.navigation .menu > li {
+    position: relative; /* Để sub-menu có thể được định vị */
+}
+
+
+.navigation .menu > li > a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+
+.navigation .sub-menu {
+    display: none; /* Ẩn sub-menu mặc định */
+    position: absolute; /* Định vị sub-menu */
+    top: 60%; /* Đặt sub-menu ngay dưới menu chính */
+    color: rgb(241, 54, 54); /* Màu nền cho sub-menu */
+    border: 1px solid #fcf3f3; /* Đường viền cho sub-menu */
+    z-index: 1000; /* Đảm bảo sub-menu nằm trên các phần tử khác */
+    text-align: left;
+}
+
+
+.navigation .menu > li:hover .sub-menu {
+    display: block; /* Hiển thị sub-menu khi di chuột qua menu chính */
+}
+
+
+.navigation .sub-menu li {
+    width: 200px; /* Đặt chiều rộng cho các mục trong sub-menu */
+}
+
+
+.navigation .sub-menu li a {
+    padding: 10px; /* Padding cho các mục trong sub-menu */
+    text-decoration: none; /* Bỏ gạch chân */
+    display:flex; /* Đảm bảo các mục trong sub-menu là block */
+    color: rgb(7, 7, 7); /* Màu chữ cho các mục trong sub-menu */
+    text-align: left;
+}
+
+
+.navigation .sub-menu li a:hover {
+    color: #030303; /* Hiệu ứng hover cho các mục trong sub-menu */
+}
+/* ----------------- Responsive CSS ----------------- */
+
+/* Mobile: max-width 46.1875em (~740px) */
+@media only screen and (max-width: 46.1875em) {
+    header {
+        flex-direction: row; /* Đặt lại header thành dạng cột cho mobile */
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .logo img {
+        max-width: 120px; /* Giảm kích thước logo trên mobile */
+        width: 100%;
+    }
+    .logo{
+        display:flex;
+        flex:1;
+    }
+    .navigation {
+        display: none; /* Ẩn thanh menu trên mobile */
+    }
+
+    .header-extras {
+        display:flex;
+        justify-content: center; /* Đưa các icon sang giữa */
+        width: 100%;
+        margin-top: 10px;
+        flex:1;
+    }
+
+    .search-bar {
+        display: none; /* Ẩn thanh tìm kiếm trên mobile */
+    }
+    
+    .user-icons {
+        display: flex;
+        justify-content: right; /* Căn giữa các icon */
+        width: 100%;
+    }
+
+    .cart {
+        margin-left: 20px; /* Thêm khoảng cách nếu cần */
+    }
+}
+
+
+/* Tablet: min-width 46.25em and max-width 63.9375em (~740px to ~1024px) */
+@media only screen and (min-width: 46.25em) and (max-width: 64em) {
+    header {
+        flex-direction: row; /* Giữ nguyên layout ngang cho tablet */
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 100%;
+        max-width: 180px; /* Điều chỉnh lại kích thước logo */
+    }
+
+    .navigation {
+        display: none; /* Đảm bảo .navigation luôn hiển thị */
+    }
+
+    .menu {
+        display: flex; /* Hiển thị menu ngang */
+        flex: 1;
+        justify-content: space-around; /* Căn chỉnh các item menu đều */
+    }
+
+    .menu li {
+        margin-right: 15px; /* Thêm khoảng cách giữa các menu */
+    }
+
+    .menu li a {
+        padding: 15px;
+        font-size: 15px; /* Điều chỉnh kích thước chữ cho tablet */
+        display:none;
+    }
+
+    .header-extras {
+        display: flex;
+        justify-content: flex-end; /* Đặt các icon tìm kiếm và đăng nhập sang bên phải */
+        width: 40%;
+    }
+
+    .header-extras .user-icons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .sub-menu {
+        width: 200px; /* Tăng chiều rộng cho sub-menu */
+    }
+    .search-bar {
+        display:none;
+    }
+}
+
+
+
+/* Chung cho tất cả thiết bị có max-width 63.9375em */
+@media only screen and (max-width: 64em) {
+    .menu li a {
+        padding: 12px 10px; /* Tăng padding cho các item menu */
+    }
+
+    .search-bar input {
+        width: 100%; /* Đảm bảo ô tìm kiếm chiếm toàn bộ chiều rộng */
+        padding: 10px 20px;
+    }
+
+    .search-bar i {
+        right: 10px; /* Đưa icon tìm kiếm vào bên phải */
+    }
+
+    .cart-count {
+        font-size: 10px; /* Giảm kích thước font cho cart-count */
+        padding: 3px 7px;
+    }
+
+    .cart {
+        position: relative;
+    }
+}
+

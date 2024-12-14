@@ -1,0 +1,113 @@
+table {
+    width: 60%;
+     margin: 0 auto;
+     border-collapse: collapse;
+     font-family: Arial, sans-serif;
+}
+table, th, td {
+     border: 1px solid #ddd;
+}
+th, td {
+     padding: 12px;
+     text-align: left;
+}
+th {
+     background-color: #f2f2f2;
+}
+td input {
+     width: 100%;
+     padding: 8px;
+     font-size: 16px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+}
+td input:focus {
+     outline-color: #f04770;
+}
+form table td input[type="submit"] {
+     width: 100%;
+     padding: 10px;
+     background-color: #728156;
+     color: #fff;
+     font-size: 16px;
+     font-weight: bold;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+}
+ 
+ form table td input[type="submit"]:hover {
+     background-color: #2bb165;
+}
+@media screen and (max-width: 48em) {
+     table {
+         width: 80%; /* Tăng chiều rộng của bảng trên tablet */
+         margin: 0 auto;
+         border-collapse: collapse;
+         font-family: Arial, sans-serif;
+     }
+ 
+     table, th, td {
+         border: 1px solid #ddd;
+     }
+ 
+     th, td {
+         padding: 10px; /* Giảm padding một chút trên tablet */
+         font-size: 14px; /* Giảm font size để phù hợp với màn hình tablet */
+     }
+ 
+     td input {
+         width: 100%;
+         padding: 10px; /* Tăng padding cho input trên tablet */
+         font-size: 14px; /* Điều chỉnh lại font size cho các input */
+         border: 1px solid #ccc;
+         border-radius: 4px;
+         box-sizing: border-box;
+     }
+ 
+     td input:focus {
+         outline-color: #f04770;
+     }
+ 
+     form table td input[type="submit"] {
+         width: 100%;
+         padding: 12px; /* Tăng padding cho nút submit trên tablet */
+         background-color: #728156;
+         color: #fff;
+         font-size: 14px; /* Điều chỉnh font size cho nút submit */
+         font-weight: bold;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         transition: background-color 0.3s;
+     }
+ 
+     form table td input[type="submit"]:hover {
+         background-color: #2bb165;
+     }
+ }
+ 
+ /*---------------------------------------------------Đăng nhập - Mobile----------------------------------------------------*/
+ @media screen and (max-width: 36em) {
+     table {
+         width: 90%; /* Tăng chiều rộng của bảng để sử dụng hết không gian màn hình */
+     }
+ 
+     th, td {
+         padding: 15px; /* Tăng padding cho các ô trên mobile */
+         font-size: 14px; /* Giảm font-size để hiển thị vừa trên màn hình nhỏ */
+     }
+ 
+     td input {
+         font-size: 14px; /* Điều chỉnh font-size của input */
+         padding: 12px; /* Tăng padding cho các input */
+     }
+ 
+     form table td input[type="submit"] {
+         padding: 12px; /* Tăng padding cho nút submit trên mobile */
+         font-size: 14px; /* Giảm kích thước font cho nút submit */
+     }
+ }
+ 

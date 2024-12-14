@@ -1,0 +1,108 @@
+.bangdangky {
+    padding-top: 1050px;
+    border-collapse: collapse;
+    font-size: 15px;
+    margin: auto; 
+    display: table; 
+}
+form table td input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+form table td a {
+    display: block;
+    margin-top: 1px;
+    font-size: 16px;
+    color: #007BFF;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s;
+}
+form table td a:hover {
+    color: #ed0924;
+}
+/*---------------------------------------------------Đăng ký - Responsive----------------------------------------------------*/
+
+.bangdangky {
+    padding-top: 5em; /* Khoảng cách trên của form */
+    border-collapse: collapse;
+    font-size: 15px;
+    margin: auto;
+    display: table;
+    width: 80%; /* Đảm bảo form không bị rộng quá trên tablet */
+}
+
+/* Table cells padding */
+form table td {
+    padding: 12px; /* Giảm padding để tiết kiệm không gian */
+}
+
+/* Điều chỉnh form input */
+form table td input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Điều chỉnh link */
+form table td a {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #007BFF;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+/* Hover link */
+form table td a:hover {
+    color: #ed0924;
+}
+
+/* Mobile (width <= 767px) */
+/*---------------------------------------------------Đăng ký - Mobile----------------------------------------------------*/
+@media screen and (max-width: 48em) {
+    .bangdangky {
+        padding-top: 3em; /* Giảm khoảng cách trên trên mobile */
+        width: 95%; /* Mở rộng form để sử dụng tối đa không gian trên mobile */
+    }
+
+    form table {
+        width: 100%; /* Đảm bảo table chiếm toàn bộ chiều rộng màn hình */
+        margin: 0 auto; /* Giúp table căn giữa trên màn hình */
+    }
+
+    form table td {
+        padding: 15px 10px; /* Giãn thêm một chút để table không quá chật */
+        font-size: 14px; /* Giảm font-size cho phù hợp với không gian */
+    }
+
+    form table td input[type="submit"] {
+        font-size: 14px; /* Font-size button cho phù hợp */
+        padding: 12px; /* Đảm bảo padding hợp lý cho nút submit */
+    }
+
+    form table td a {
+        font-size: 14px; /* Giảm font-size cho các liên kết */
+        margin-top: 10px; /* Giảm khoảng cách giữa các link */
+    }
+}
+    
+
+
